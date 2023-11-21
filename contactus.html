@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;500;600;700&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact Us</title>
+    <link rel="icon" type="images/x-icon" href="imges/logo.jpeg" />
+
+  </head>
+  <body>
+    <header>
+      <h1>Digital Seva</h1>
+
+      <section class="menu">
+        <ul class="menu-list">
+          <li ><a href="index.html">Home</a></li>
+          <li class="">Products</li>
+          <li><a href="contactus.html">Contact</a></li>
+        </ul>
+
+        <button>
+          <i class="fas fa-times"></i>
+          <i class="fas fa-bars"></i>
+        </button>
+      </section>
+    </header>
+
+    <section class="main">
+      <section class="left">
+        <p class="title">Contact&nbsp;Us</p>
+        <p class="msg">
+          Thank you for considering for your digital marketing needs. We're here
+          to assist you in every step of your online journey. Whether you have
+          questions, need a consultation, or are ready to start a project, feel
+          free to reach out to us.
+        </p>
+        <button class="cta" onclick="window.location.href='index.html'">
+          Home
+        </button>
+      </section>
+
+      <section class="right">
+        <h1>Email</h1>
+        <a class="msg" href="mailto:bagwancsc@gmail.com">bagwancsc@gmail.com</a>
+        <h1>Business Hours</h1>
+        <p class="msg">Monday - Friday: 9:00 AM - 6:00 PM</p>
+      </section>
+    </section>
+
+    <script>
+       var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('opened')
+        })
+    </script>
+  </body>
+</html>
